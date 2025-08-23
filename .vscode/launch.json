@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ejercicio2_RLE",
+            "request": "launch",
+            "mainClass": "Ejercicio2_RLE",
+            "projectName": "estructura-datos-2025-b-g1_a549490a"
+        },
+        {
+            "type": "java",
+            "name": "Ejecicio1_ISBN13",
+            "request": "launch",
+            "mainClass": "Ejecicio1_ISBN13",
+            "projectName": "estructura-datos-2025-b-g1_a549490a"
+        },
+        {
+            "type": "java",
             "name": "NuemerosPares",
             "request": "launch",
             "mainClass": "NuemerosPares",
