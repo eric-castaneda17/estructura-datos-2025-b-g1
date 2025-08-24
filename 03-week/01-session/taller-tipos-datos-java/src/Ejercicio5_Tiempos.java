@@ -1,5 +1,6 @@
 public class Ejercicio5_Tiempos {
 
+    // Convierte un tiempo en formato HH:MM:SS a segundos
     private static int aSegundos(String t) {
         String[] partes = t.split(":");
         int h = Integer.parseInt(partes[0]);
@@ -7,6 +8,8 @@ public class Ejercicio5_Tiempos {
         int s = Integer.parseInt(partes[2]);
         return h * 3600 + m * 60 + s;
     }
+
+    // Convierte segundos a formato HH:MM:SS
     private static String aHHMMSS(int segs) {
         int h = segs / 3600;
         int m = (segs % 3600) / 60;
@@ -19,6 +22,8 @@ public class Ejercicio5_Tiempos {
 
         int[] segs = new int[tiempos.length];
         int total = 0;
+
+        // Convierte cada tiempo a segundos y acumula el total
         for (int i = 0; i < tiempos.length; i++) {
             segs[i] = aSegundos(tiempos[i]);
             total += segs[i];
@@ -26,9 +31,11 @@ public class Ejercicio5_Tiempos {
 
         System.out.println("Tiempo total: " + aHHMMSS(total));
 
+        // Promedio de los tiempos
         int promedio = total / tiempos.length;
         System.out.println("Promedio: " + aHHMMSS(promedio));
 
+        // Busca el tramo más largo
         int max = segs[0], idxMax = 0;
         for (int i = 1; i < segs.length; i++) {
             if (segs[i] > max) {
@@ -38,6 +45,7 @@ public class Ejercicio5_Tiempos {
         }
         System.out.println("Tramo más largo: " + aHHMMSS(max) + " (" + idxMax + ")");
 
+        // Porcentaje de cada tramo respecto al total
         System.out.println("Porcentajes:");
         for (int i = 0; i < segs.length; i++) {
             double p = (total == 0) ? 0 : (segs[i] * 100.0) / total;
