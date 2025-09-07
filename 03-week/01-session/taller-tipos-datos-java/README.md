@@ -29,7 +29,7 @@ Cómo funciona:
 3. Salida: 
 - Muestra el original, el comprimido y el ratio (longitud comprimido ÷ longitud original).
 
-## Ejercicio3_Temperaturas
+### Ejercicio3_Temperaturas
 Qué hace:
 1. Pide temperaturas.
 
@@ -51,7 +51,7 @@ Cómo funciona:
 - Saca la desviación estándar.
 5. Salida: Muestra los resultados.
 
-## Ejercicio4_ConversorBases
+### Ejercicio4_ConversorBases
 Qué hace:
 
 1. Pide al usuario un número y la base en la que está escrito (puede ser 2 = binario, 10 = decimal o 16 = hexadecimal).
@@ -72,7 +72,7 @@ Cómo funciona:
 4. Salida extra:
 - Indica si se usó BigInteger o no.
 
-## Ejercicio5_Tiempos
+### Ejercicio5_Tiempos
 Este programa toma una lista de tiempos escritos en el formato horas:minutos:segundos (HH:MM:SS):
 
 1. Convierte cada tiempo a segundos:
