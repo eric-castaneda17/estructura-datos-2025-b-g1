@@ -13,7 +13,7 @@ public class Biblioteca {
     private static int numLibros = 0;
 
     private static NodoPrestamo prestamosActivos = null; // lista simple
-    private static NodoHistorial historial = null;       // lista doble
+    private static NodoHistorial historial = null;
 
     private static Scanner sc = new Scanner(System.in);
 
@@ -87,7 +87,7 @@ public class Biblioteca {
         System.out.println("Libro registrado.");
     }
 
-    //
+    // baja de libro
     public static void eliminarLibro() {
         System.out.print("Código del libro: ");
         int codigo = leerEntero();
