@@ -9,17 +9,15 @@ Permite registrar libros, eliminarlos lógicamente, buscar por título, gestiona
 - Listas doblemente enlazadas
 - Programación estructurada (secuencia, selección e iteración)
 
-## Razones de elección de estructuras y complejidad
+## Razones de elección de estructuras 
 ### Arrays (catalogo[] y disponibilidad[][])
-- Se eligieron porque el catálogo de libros tiene un tamaño fijo (MAX_LIBROS).
-- El acceso por índice es de complejidad O(1), muy eficiente.
-- La búsqueda de un libro se realiza con búsqueda lineal, complejidad O(n), aceptable para catálogos pequeños.
+- Se usan porque el catálogo tiene un tamaño máximo definido.
+- Son fáciles de manejar y permiten guardar todos los libros en orden.
+- También permiten relacionar un libro con el stock disponible en cada sucursal usando una matriz.
 
 ### Lista enlazada simple (prestamosActivos)
-- Se utiliza para manejar los préstamos activos, que cambian dinámicamente.
-- Insertar un préstamo al inicio de la lista tiene complejidad O(1).
-- Eliminar un préstamo (cuando se devuelve un libro) requiere recorrer la lista, complejidad O(n).
-- Se eligió lista simple porque solo es necesario recorrer hacia adelante.
+- Se usa porque los préstamos cambian mucho (se agregan y se eliminan).
+- Con esta estructura es más fácil administrar la lista de préstamos activos
 
 ## Lista doblemente enlazada (historial)
 - Se usa para almacenar el historial de operaciones (altas, bajas, préstamos, devoluciones).
