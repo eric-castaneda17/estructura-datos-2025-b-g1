@@ -34,7 +34,6 @@
    Es la relación entre el número de elementos y el número de buckets.  
    Cuando este factor se acerca a 1, el número de colisiones aumenta.
 
----
 ## Conclusión
 
 La tabla hash ofrece un **rendimiento promedio excelente** (O(1)) para las operaciones básicas,  
